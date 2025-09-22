@@ -20,7 +20,7 @@ sudo rpm-ostree install -y distrobox steam-devices timeshift vim xclip zsh
 
 ### Install Flatpaks
 ```bash
-wget -q -O ./flatpaks.txt
+wget -q -O ./flatpaks.txt https://raw.githubusercontent.com/rm-tic/fedora-atomic/refs/heads/main/flatpaks.txt
 ```
 ```bash
 xargs flatpak install -y flathub < flatpaks.txt
@@ -41,12 +41,12 @@ curl -sS https://starship.rs/install.sh | sh
 
 #### Configure startship
 ```bash
-wget -q -O $HOME/.config/starship.toml 
+wget -q -O $HOME/.config/starship.toml https://raw.githubusercontent.com/rm-tic/fedora-atomic/refs/heads/main/starship.toml
 ```
 
 #### Configure ZSH
 ```bash
-wget -q -O $HOME/.oh-my-zsh/custom/custom.zsh
+wget -q -O $HOME/.oh-my-zsh/custom/custom.zsh https://raw.githubusercontent.com/rm-tic/fedora-atomic/refs/heads/main/custom.zsh
 ```
 
 ---
